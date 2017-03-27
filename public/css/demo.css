@@ -1,0 +1,383 @@
+.API-Menu {
+    padding-top: 75px;
+    width: 200px;
+    min-height: 150px;
+    height: 720px;
+    overflow-y: auto;
+    position: fixed;
+}
+
+.API-Menu a {
+    font-family: Whitney SSm A,Whitney SSm B,Helvetica,Arial,sans-serif;
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.API-Menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.API-Menu a.active {
+    background-color: #4CAF50; /* Add a green color to the "active/current" link */
+    color: white;
+}
+
+.API-Description {
+    padding-top: 60px;
+    margin: 0px;
+    top: 0px;
+    left: 220px;
+    width: 500px;
+    position: absolute;
+    font-family: Whitney SSm A,Whitney SSm B,Helvetica,Arial,sans-serif;
+}
+
+.LanguageScrollMenu {
+    margin: 0px;
+    top: 0px;
+    left: 780px;
+    right: 0px;
+    position: fixed;
+    z-index: 999;
+    background-color: #2a2a2a;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.LanguageScrollMenu a {
+    font-family: Whitney SSm A,Whitney SSm B,Helvetica,Arial,sans-serif;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    font-size: 11pt;
+    text-decoration: none;
+}
+
+.LanguageScrollMenu a:hover {
+    background-color: #6a6a6a;
+}
+
+.node-section {
+    margin: 0px;
+    top: 20px;
+    left: 780px;
+    right: 0px;
+    min-width: 120px;
+    width: 500px;
+    height: 100%;
+    padding-top: 10px;
+    position: absolute;
+    background-color: #333333;
+}
+
+.node-section a {
+    font-family: Whitney SSm A,Whitney SSm B,Helvetica,Arial,sans-serif;
+    display: inline-block;
+    color: white;
+    text-align: left;
+    padding: 14px;
+    font-size: 12pt;
+}
+
+.code-section {
+    margin: 0px;
+    min-width: 120px;
+    width: 500px;
+    text-align: center;
+}
+
+.code-section code {
+    position: absolute;
+    display: block;
+    padding-left: 50px;
+    padding-right: 40px;
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 10pt;
+    text-align: left;
+}
+
+.intro {
+    padding-top: 15px;
+}
+
+.location {
+    padding-top: 170px;
+}
+
+/*
+* CSS equivalent to stripe
+*/
+
+#api-reference {
+    box-sizing: border-box;
+    background: #fff;
+    color: #4c555a;
+    font-family: Whitney SSm A,Whitney SSm B,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+    text-transform: none;
+    overflow: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+
+#api-reference #background {
+    bottom: 0;
+    left: 221px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#api-reference #background .background-actual {
+    bottom: 0;
+    left: 45%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #2d3134;
+}
+
+#api-reference #sidebar {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 75;
+    width: 220px;
+    background: #fafcfc;
+    border-right: 1px solid #f0f4f7;
+}
+
+#api-reference #sidebar .sidebar-nav {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 49px;
+    overflow: auto;
+}
+
+#api-reference #header {
+    left: 221px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+
+#api-reference #header .header-section {
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+    height: 49px;
+}
+
+#api-reference #header .header-section.header-section-sidebar {
+    left: -221px;
+    z-index: 30;
+    width: 220px;
+    border-bottom: 1px solid #f0f4f7;
+}
+
+#api-reference #header .logo {
+    left: 20px;
+    position: absolute;
+    top: 14px;
+    display: inline-block;
+    width: 44px;
+}
+
+#api-reference #header .logo img{
+    width: 100%;
+}
+
+#api-reference #header .logo .docs {
+    padding-left: 4px;
+    position: absolute;
+    top: 2px;
+    font-size: 21px;
+    color: #0099e5;
+    left: 47px;
+    text-decoration: none;
+    line-height: 20px;
+}
+
+#api-reference #header .header-section.header-section-example {
+    left: 45%;
+    right: 0;
+    z-index: 10;
+    height: 50px;
+    min-width: 464px;
+    background: #242729;
+    color: #d0d4d7;
+}
+
+#api-reference #header #language .language-toggle li {
+    float: left;
+    position: relative;
+    margin: 8px 2px 0;
+}
+
+#api-reference #header #language .language-toggle li a
+{
+    font-family: Whitney SSm A,Whitney SSm B,Helvetica,Arial,sans-serif;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    font-size: 11pt;
+    text-decoration: none;
+}
+
+ol, ul {
+    list-style: none;
+    margin-top: -8px;
+}
+
+#api-reference #header #language .language-toggle li .language-toggle-button {
+    position: relative;
+    z-index: 50;
+    display: block;
+    padding: 0 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #d0d4d7;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 29px;
+}
+
+#api-reference h5 {
+    color: #939da3;
+}
+
+#api-reference h5 {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-family: Whitney SSm A,Whitney SSm B,Helvetica,Arial,sans-serif;
+}
+
+#api-reference #sidebar .sidebar-nav .sidebar-nav-heading:first-child {
+    padding-top: 20px;
+}
+
+#api-reference #sidebar .sidebar-nav .sidebar-nav-heading {
+    padding: 0 20px 4px;
+    margin: 4px 0px;
+}
+
+#api-reference #sidebar .sidebar-nav .sidebar-nav-items {
+    margin: 0;
+    padding: 0 0 26px;
+    line-height: 20px;
+    list-style: none;
+}
+
+#api-reference #sidebar .sidebar-nav .sidebar-nav-items li {
+    line-height: 20px;
+    list-style-type: none;
+}
+
+#api-reference #sidebar .sidebar-nav .sidebar-nav-items li .sidebar-nav-item{
+    display: block;
+    margin: 0;
+    padding: 6px 20px;
+    color: #4c555a;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+}
+
+#api-reference #sidebar .sidebar-nav .sidebar-nav-items li .selected {
+    color: #0099e5;
+}
+
+#api-reference #content {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    left: 221px;
+    top: 0;
+    z-index: 50;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#api-reference #content .method {
+    display: block;
+    overflow: hidden;
+}
+
+#api-reference #content .method .method-area {
+    overflow: hidden;
+}
+
+#api-reference #content .method .method-area:first-child .method-copy {
+    padding-top: 30px;
+}
+
+#api-reference #content .method:not(:first-child) .method-copy {
+    border-top: 1px solid #f0f4f7;
+}
+
+#api-reference #content .method .method-copy {
+    float: left;
+    padding: 0 0 50px;
+    width: 45%;
+}
+
+#api-reference #content .method .method-copy .method-copy-padding {
+    padding: 20px 40px;
+}
+
+#api-reference h1 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+#api-reference h1{
+    margin: 0;
+    color: #292e31;
+}
+
+#api-reference h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+#api-reference #content .method .method-example {
+    position: relative;
+    z-index: 2;
+    margin-left: 45%;
+    padding: 42px 0 50px;
+    color: #dde4e8;
+}
+
+#api-reference #content .method:not(:first-child) .method-example {
+    border-top: 1px solid #33383b;
+}
+
+#api-reference #content .method .method-example .method-example-part {
+    padding: 30px 40px;
+}
+
+/*
+* stripe equivalent css ends
+*/
